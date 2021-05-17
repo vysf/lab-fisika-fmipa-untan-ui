@@ -1,0 +1,99 @@
+.modul-container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 20.625rem)); /*330px*/
+  grid-gap: 1.25rem; /*20px*/
+  justify-content: center;
+}
+
+.modul-download {
+  display: flex;
+  margin: 0 auto;
+  width: 20.625rem; /*330px*/
+  background-color: var(--clr-white);
+  box-shadow: 0 0.03125rem 0.625rem -0.3125rem var(--clr-black-primary);
+  border-radius: 0.625rem; /*10px*/
+}
+
+.modul-name {
+  padding: 1.25rem 0.9375rem; /*20px 15px*/
+}
+
+.modul-name > h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.125rem; /*18px*/
+  color: var(--clr-black-primary);
+}
+
+.modul-name > h6 {
+  font-family: "Quicksand", sans-serif;
+  color: var(--clr-gray-500);
+  font-size: 0.75rem; /*12px*/
+  margin-top: 0.3125rem; /*5px*/
+}
+
+.btn-download {
+  margin-left: auto;
+  border-radius: 0.625rem; /*10px*/
+  border: hidden;
+}
+
+.btn-download > a {
+  padding: 1.375rem 1.5625rem; /*22px 25px*/
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-download-blue {
+  background-color: var(--clr-blue-primary);
+}
+
+.btn-download-yellow {
+  background-color: var(--clr-yellow-primary);
+}
+
+.btn-download-blue:hover {
+  background-color: var(--clr-blue-hover);
+}
+
+.btn-download-yellow:hover {
+  background-color: var(--clr-yellow-hover);
+}
+
+@media screen and (max-width: 900px) {
+  .btn {
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn {
+    width: unset;
+  }
+
+  .modul-download {
+    width: 100%;
+  }
+
+  .modul-name {
+    padding: 0.9375rem; /*15px 15px*/
+  }
+
+  .modul-name > h4 {
+    font-size: 0.875rem; /*14px*/
+  }
+
+  .modul-name > h6 {
+    font-size: 0.625rem; /*10px*/
+  }
+
+  .btn-download > a {
+    padding: 0 1.5625rem; /*0 25px*/
+  }
+
+  .download-icon {
+    width: 1.375rem; /*22px*/
+    height: auto;
+  }
+}

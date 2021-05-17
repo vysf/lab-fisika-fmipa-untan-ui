@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="website laboratorium fisika fakultas matematika dan ilmu pengetahuan alam universitas tanjungpura pontianak kalimantan barat"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/praktikum.css" />
+    <link rel="stylesheet" href="/css/bebaslab.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <title>Pendaftaran Bebas Lab Page</title>
+  </head>
+  <body>
+    <!-- COMPONENT HEADER -->
+    <div class="header-decoration md">
+      <svg
+        class="path-header"
+        width="510"
+        height="510"
+        viewBox="0 0 510 510"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M254.521 509.042C395.089 509.042 509.042 395.089 509.042 254.521C509.042 113.953 395.089 0 254.521 0C113.953 0 0 113.953 0 254.521C0 395.089 113.953 509.042 254.521 509.042ZM253.826 421.421C346.386 421.421 421.42 346.386 421.42 253.826C421.42 161.266 346.386 86.2316 253.826 86.2316C161.266 86.2316 86.2313 161.266 86.2313 253.826C86.2313 346.386 161.266 421.421 253.826 421.421Z"
+          fill="#E4E8F5"
+        />
+      </svg>
+    </div>
+
+    <header id="header">
+      <div class="container md">
+        <input type="checkbox" id="check" />
+        <div class="logo-container">
+          <a href="../index.html">
+            <img src="/assets/logo web lab.png" alt="logo lab" />
+          </a>
+        </div>
+
+        <div class="nav-btn">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-link">
+                <a href="#">Praktikum <i class="arrow-down"></i></a>
+                <!-- COMPONENT DROPDOWN -->
+                <div class="dropdown">
+                  <i class="arrow-up"></i>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="pendaftaranPraktikumPage-table.html"
+                          >Daftar Praktikum</a
+                        >
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="downloadModulPage.html">Modul</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- END OF COMPONENT DROPDOWN -->
+              </li>
+              <li class="nav-link">
+                <a href="#">Administrasi<i class="arrow"></i></a>
+                <div class="dropdown">
+                  <i class="arrow-up"></i>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="downloadSuratPage.html">Peminjaman Alat</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="pendaftaranBebasLabPage-table.html"
+                          >Bebas Lab</a
+                        >
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="pendaftaranPermohonanNilaiPage.html"
+                          >Permohonan Nilai</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-link">
+                <a href="pengumumanPage.html">Pengumuman</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="log-sign">ini sign</div> -->
+        </div>
+
+        <div class="hamburger-menu-container">
+          <div class="hamburger-menu">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END OF COMPONENT HEADER -->
+
+    <main class="md">
+      <section class="main-container">
+        <!-- COMPONENT MAIN -->
+        <div class="allert allert-yellow">
+          <p class="allert-text">
+            Mohon isi form pendaftaran dibawah dengan baik dan benar untuk
+            menghindari kesalahan data.
+            <b
+              >Khusus mahasiswa Jurusan Fisika wajib menyerahkan undangan sidang
+              skripsi ketika mengambil surat bebas lab.</b
+            >
+          </p>
+        </div>
+        <form action="" method="post" id="bebaslab-form">
+          <div class="input-field">
+            <label for="nama">Nama Lengkap</label>
+            <input
+              class="input"
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Nama Lengkap"
+            />
+            <small class="error-msg">Error message</small>
+          </div>
+
+          <div class="input-field">
+            <label for="nim">NIM</label>
+            <input
+              class="input"
+              type="text"
+              name="nim"
+              id="nim"
+              placeholder="NIM"
+            />
+            <small class="error-msg">Error message</small>
+          </div>
+
+          <div class="input-field">
+            <label for="prodi">Program Studi</label>
+            <select class="input" name="prodi" id="prodi" form="praktikum-form">
+              <option value="" disabled selected hidden>Program Studi</option>
+              <option value="Matematika">Matematika</option>
+              <option value="Fisika">Fisika</option>
+              <option value="Kimia">Kimia</option>
+              <option value="Biologi">Biologi</option>
+              <option value="Rekayasa Sistem Komputer">
+                Rekayasa Sistem Komputer
+              </option>
+              <option value="Ilmu Kelautan">Ilmu Kelautan</option>
+              <option value="Geofisika">Geofisika</option>
+              <option value="Statistika">Statistika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="S2 Kimia">S2 Kimia</option>
+            </select>
+            <small class="error-msg">Error message</small>
+          </div>
+
+          <div class="input-field">
+            <label for="hp">Telepon</label>
+            <input
+              class="input"
+              type="tel"
+              id="hp"
+              name="hp"
+              pattern="[0-9]-[0-9]-[0-9]"
+              placeholder="Telepon"
+            />
+            <small class="error-msg">Error message</small>
+          </div>
+
+          <div class="input-field">
+            <label
+              class="with-tootip"
+              for="email"
+              data-tooltip="Disarankan menggunakan email Student Untan. Contoh: example@student.untan.ac.id"
+              >Email (?)</label
+            >
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+            <small class="error-msg">Error message</small>
+          </div>
+
+          <button class="btn btn-primary-yellow" type="submit">
+            <a href="pendaftaranBebasLabPage-table.html">Kirim</a>
+          </button>
+        </form>
+        <!-- END OF COMPONENT MAIN -->
+      </section>
+    </main>
+
+    <div class="footer">
+      <footer class="md">
+        <div class="container-footer">
+          <div class="footer-left">
+            <div class="logo-container">
+              <a href="../index.html">
+                <img src="/assets/logo web lab.png" alt="logo lab" />
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="mailto:">
+                <img src="/assets/gmail.png" alt="email" />
+              </a>
+              <a href="#">
+                <img src="/assets/instagram.png" alt="instagram" />
+              </a>
+              <a href="#">
+                <img src="/assets/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-center">
+            <h4>Informasi</h4>
+            <ul>
+              <li>
+                <a href="pendaftaranPraktikumPage-table.html">Praktikum</a>
+              </li>
+              <li>
+                <a href="downloadModulPage.html">Modul</a>
+              </li>
+              <li>
+                <a href="pendaftaranBebasLabPage-table.html">Bebas Lab</a>
+              </li>
+              <li>
+                <a href="pengumumanPage.html">Pengumuman</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-right">
+            <h4>Alamat</h4>
+            <p>Pontianak, Kalimantan Barat - Indonesia</p>
+            <p>
+              Jl. Prof. Dr. H. Hadar Nawawi, Pontianak Tenggara, Pontianak.
+              78124
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="copyright">
+      <h4>© 2021 Laboratorium Fisika FMIPA UNTAN. All right reserved</h4>
+    </div>
+
+    <script src="/js/scrollHeader.js"></script>
+    <script src="/js/selectPlaceholder.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+.pengumuman-container {
+  text-align: center;
+  margin-bottom: 2.1875rem; /*35px*/
+}
+
+.pengumuman-judul {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 2.125rem; /*34px*/
+}
+
+.pengumuman-tanggal {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+.allert-text {
+  font-weight: 500;
+  margin-bottom: 9.375rem; /*150px*/
+  padding: 0 1.25rem; /*0 20px*/
+}
+
+@media screen and (max-width: 900px) {
+  .allert-text {
+    margin-bottom: 6.25rem; /*100px*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pengumuman-container {
+    margin-bottom: 1.5625rem; /*25px*/
+  }
+
+  .pengumuman-judul {
+    font-size: 1.5rem; /*24px*/
+  }
+
+  .pengumuman-tanggal {
+    font-size: 0.75rem; /*12px*/
+  }
+
+  .allert-text {
+    padding: unset;
+    margin-bottom: unset;
+  }
+}

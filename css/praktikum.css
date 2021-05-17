@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap");
+
+.allert {
+  margin: 0 auto;
+  margin-bottom: 3.75rem; /*60px*/
+
+  padding: 1rem 0.9375rem; /*16px 15px*/
+  background-color: var(--clr-blue-300);
+
+  width: 51rem; /*816px*/
+  border-radius: 0.5rem; /*8px*/
+}
+
+.allert-blue {
+  background-color: var(--clr-blue-300);
+}
+
+.allert-text {
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-black-primary);
+  font-weight: 600;
+}
+
+#praktikum-form {
+  /* background-color: violet; */
+  margin: 0 auto;
+
+  width: 51rem; /*816px*/
+}
+
+.input-field {
+  margin-bottom: 1.875rem; /*30px*/
+
+  height: 5.625rem; /*90px*/
+  /* width: 100%; */
+}
+
+.input-field > label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  font-size: 1rem; /*16px*/
+  font-weight: 600;
+  margin-bottom: 0.5625rem; /*9px*/
+  color: var(--clr-black-primary);
+}
+
+.input {
+  width: 100%;
+  padding: 0.625rem 1rem; /*10px 16px*/
+  border-radius: 0.3125rem; /*5pxpx*/
+  border: 0.125rem solid var(--clr-gray-400); /*2px*/
+  font-size: 1rem; /*16px*/
+  color: var(--clr-black-primary);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.with-tootip {
+  position: relative;
+  cursor: pointer;
+}
+
+.with-tootip:before,
+.with-tootip::after {
+  --left: 8%;
+  --scale: 0;
+  --arrow-size: 0.625rem; /*10px*/
+  --tooltip-color: var(--clr-black-85);
+
+  position: absolute;
+  top: 50%;
+  left: var(--left);
+  transform: translateY(-50%) translateX(var(--translate-x, 0))
+    scale(var(--scale));
+  transition: 0.2s transform;
+  transform-origin: left;
+}
+
+.with-tootip::before {
+  --translate-x: calc(1.875rem - var(--arrow-size)); /*30px*/
+
+  content: attr(data-tooltip);
+  color: var(--clr-white);
+  padding: 0.625rem; /*10px*/
+  /* padding: 0.5rem; */
+  /* max-width: 299px; */
+  /* width: max-content; */
+  max-width: 100%;
+  text-align: center;
+  background-color: var(--tooltip-color);
+  font-size: 0.875rem; /*14px*/
+  font-weight: 500;
+  border-radius: 0.3125rem; /*5px*/
+}
+
+.with-tootip::after {
+  /* --translate-x: calc(-1 * var(--arrow-size)); */
+
+  content: "";
+  border: var(--arrow-size) solid transparent;
+  border-right-color: var(--tooltip-color);
+  transform-origin: right;
+}
+
+.with-tootip:hover::before,
+.with-tootip:hover::after {
+  --scale: 1;
+}
+
+select.unselected {
+  color: var(--clr-gray-400);
+  font-size: 1rem; /*16px*/
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: var(--clr-gray-400);
+  font-size: 1rem; /*16px*/
+  font-weight: 500;
+}
+
+option {
+  color: var(--clr-black-primary);
+  margin: 0.625rem 0; /*10px 0*/
+  font-size: 1rem; /*816px*/
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+small {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  display: none;
+}
+
+.error-msg {
+  color: var(--clr-red-primary);
+}
+
+.success-msg {
+  color: var(--clr-green-primary);
+}
+
+/* ditaruh di class input */
+.danger {
+  border: 0.125rem solid var(--clr-red-500); /*2px*/
+}
+
+@media screen and (max-width: 900px) {
+  .allert-blue,
+  #praktikum-form {
+    /* width: 500px; */
+    width: 90%;
+  }
+
+  option {
+    font-size: 0.875rem; /*14px*/
+  }
+
+  .with-tootip:before {
+    font-size: 0.75rem; /*12px*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .allert-text {
+    font-size: 0.875rem; /*14px*/
+  }
+
+  .allert-blue,
+  #praktikum-form {
+    width: 95%;
+  }
+
+  .input-field {
+    margin-bottom: 0.9375rem; /*15px*/
+  }
+
+  .input-field > label,
+  #kelamin,
+  #prodi,
+  #reguler,
+  #praktikum,
+  #keterangan,
+  #ketua,
+  #tahun {
+    font-size: 0.875rem; /*14px*/
+  }
+
+  .input {
+    padding: 0.375rem 0.625rem; /*6px 10px*/
+  }
+
+  .input::placeholder {
+    font-size: 0.75rem; /*12px*/
+  }
+
+  .with-tootip:before,
+  .with-tootip::after {
+    --left: 19%;
+    left: var(--left);
+  }
+
+  .with-tootip:before {
+    font-size: 0.625rem; /*10px*/
+    padding: 0.3125rem; /*5px*/
+  }
+
+  small {
+    font-size: 0.625rem; /*10px*/
+  }
+}

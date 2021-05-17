@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="website laboratorium fisika fakultas matematika dan ilmu pengetahuan alam universitas tanjungpura pontianak kalimantan barat"
+    />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/table.css" />
+    <link rel="stylesheet" href="/css/praktikum.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <title>Pendaftaran Praktikum Page</title>
+  </head>
+  <body>
+    <!-- COMPONENT HEADER -->
+    <div class="header-decoration">
+      <svg
+        class="path-header"
+        width="510"
+        height="510"
+        viewBox="0 0 510 510"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M254.521 509.042C395.089 509.042 509.042 395.089 509.042 254.521C509.042 113.953 395.089 0 254.521 0C113.953 0 0 113.953 0 254.521C0 395.089 113.953 509.042 254.521 509.042ZM253.826 421.421C346.386 421.421 421.42 346.386 421.42 253.826C421.42 161.266 346.386 86.2316 253.826 86.2316C161.266 86.2316 86.2313 161.266 86.2313 253.826C86.2313 346.386 161.266 421.421 253.826 421.421Z"
+          fill="#E4E8F5"
+        />
+      </svg>
+    </div>
+
+    <header id="header">
+      <div class="container md">
+        <input type="checkbox" id="check" />
+        <div class="logo-container">
+          <a href="../index.html">
+            <img src="/assets/logo web lab.png" alt="logo lab" />
+          </a>
+        </div>
+
+        <div class="nav-btn">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-link">
+                <a href="#">Praktikum <i class="arrow-down"></i></a>
+                <!-- COMPONENT DROPDOWN -->
+                <div class="dropdown">
+                  <i class="arrow-up"></i>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="pendaftaranPraktikumPage-table.html"
+                          >Daftar Praktikum</a
+                        >
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="downloadModulPage.html">Modul</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- END OF COMPONENT DROPDOWN -->
+              </li>
+              <li class="nav-link">
+                <a href="#">Administrasi<i class="arrow"></i></a>
+                <div class="dropdown">
+                  <i class="arrow-up"></i>
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li class="dropdown-link">
+                        <a href="downloadSuratPage.html">Peminjaman Alat</a>
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="pendaftaranBebasLabPage-table.html"
+                          >Bebas Lab</a
+                        >
+                      </li>
+                      <li class="dropdown-link">
+                        <a href="pendaftaranPermohonanNilaiPage.html"
+                          >Permohonan Nilai</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-link">
+                <a href="pengumumanPage.html">Pengumuman</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="log-sign">ini sign</div> -->
+        </div>
+
+        <div class="hamburger-menu-container">
+          <div class="hamburger-menu">
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END OF COMPONENT HEADER -->
+
+    <main class="md">
+      <section class="main-container">
+        <!-- COMPONENT MAIN -->
+        <div class="table-container">
+          <div class="search-container">
+            <button class="btn btn-primary-blue" type="button">
+              <a href="pendaftaranPraktikumPage.html" rel="noopener noreferrer"
+                >Daftar Praktikum</a
+              >
+            </button>
+
+            <div class="search-input">
+              <input
+                class="search"
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Cari..."
+                autocomplete="off"
+              />
+
+              <svg
+                class="search-delete"
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fas"
+                data-icon="backspace"
+                class="svg-inline--fa fa-backspace fa-w-20"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M576 64H205.26A63.97 63.97 0 0 0 160 82.75L9.37 233.37c-12.5 12.5-12.5 32.76 0 45.25L160 429.25c12 12 28.28 18.75 45.25 18.75H576c35.35 0 64-28.65 64-64V128c0-35.35-28.65-64-64-64zm-84.69 254.06c6.25 6.25 6.25 16.38 0 22.63l-22.62 22.62c-6.25 6.25-16.38 6.25-22.63 0L384 301.25l-62.06 62.06c-6.25 6.25-16.38 6.25-22.63 0l-22.62-22.62c-6.25-6.25-6.25-16.38 0-22.63L338.75 256l-62.06-62.06c-6.25-6.25-6.25-16.38 0-22.63l22.62-22.62c6.25-6.25 16.38-6.25 22.63 0L384 210.75l62.06-62.06c6.25-6.25 16.38-6.25 22.63 0l22.62 22.62c6.25 6.25 6.25 16.38 0 22.63L429.25 256l62.06 62.06z"
+                ></path>
+              </svg>
+
+              <svg
+                class="search-icon"
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M35.5104 31.1243L28.4997 24.1148C28.1833 23.7985 27.7544 23.6227 27.3043 23.6227H26.1582C28.0989 21.1409 29.2521 18.0193 29.2521 14.6236C29.2521 6.54545 22.7056 0 14.6261 0C6.54657 0 0 6.54545 0 14.6236C0 22.7017 6.54657 29.2471 14.6261 29.2471C18.0224 29.2471 21.1445 28.0941 23.6267 26.1537V27.2997C23.6267 27.7496 23.8025 28.1785 24.119 28.4949L31.1296 35.5043C31.7906 36.1652 32.8594 36.1652 33.5134 35.5043L35.5034 33.5147C36.1644 32.8538 36.1644 31.7852 35.5104 31.1243ZM14.6261 23.6227C9.65461 23.6227 5.62541 19.6012 5.62541 14.6236C5.62541 9.65296 9.64758 5.62445 14.6261 5.62445C19.5975 5.62445 23.6267 9.64593 23.6267 14.6236C23.6267 19.5942 19.6046 23.6227 14.6261 23.6227Z"
+                  fill="#979797"
+                />
+              </svg>
+            </div>
+          </div>
+          <table>
+            <thead class="thead-blue">
+              <tr class="tr-blue">
+                <th>#</th>
+                <th>Nama</th>
+                <th>Program Studi</th>
+                <th>Praktikum</th>
+                <th>Angkatan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="tr-blue">
+                <td class="td-blue" tabel-head="No">1</td>
+                <td class="td-blue" tabel-head="Nama">Yusuf Umar Al Hakim</td>
+                <td class="td-blue" tabel-head="Program Studi">
+                  Rekayasa Sistem Komputer
+                </td>
+                <td class="td-blue" tabel-head="Praktikum">
+                  Elektronika Dasar
+                </td>
+                <td class="td-blue" tabel-head="Angkatan">2017</td>
+              </tr>
+              <tr class="tr-blue">
+                <td class="td-blue" tabel-head="No">2</td>
+                <td class="td-blue" tabel-head="Nama">Yusuf Umar Al Hakim</td>
+                <td class="td-blue" tabel-head="Program Studi">Geofisika</td>
+                <td class="td-blue" tabel-head="Praktikum">Fisika 2A</td>
+                <td class="td-blue" tabel-head="Angkatan">2017</td>
+              </tr>
+              <tr class="tr-blue">
+                <td class="td-blue" tabel-head="No">3</td>
+                <td class="td-blue" tabel-head="Nama">Yusuf Umar Al Hakim</td>
+                <td class="td-blue" tabel-head="Program Studi">
+                  Rekayasa Sistem Komputer
+                </td>
+                <td class="td-blue" tabel-head="Praktikum">Fisiska Dasar 1</td>
+                <td class="td-blue" tabel-head="Angkatan">2017</td>
+              </tr>
+              <tr class="tr-blue">
+                <td class="td-blue" tabel-head="No">4</td>
+                <td class="td-blue" tabel-head="Nama">Yusuf Umar Al Hakim</td>
+                <td class="td-blue" tabel-head="Program Studi">
+                  Rekayasa Sistem Komputer
+                </td>
+                <td class="td-blue" tabel-head="Praktikum">
+                  Elektronika Dasar
+                </td>
+                <td class="td-blue" tabel-head="Angkatan">2017</td>
+              </tr>
+              <tr class="tr-blue">
+                <td class="td-blue" tabel-head="No">5</td>
+                <td class="td-blue" tabel-head="Nama">Yusuf Umar Al Hakim</td>
+                <td class="td-blue" tabel-head="Program Studi">
+                  Rekayasa Sistem Komputer
+                </td>
+                <td class="td-blue" tabel-head="Praktikum">
+                  Elektronika Dasar
+                </td>
+                <td class="td-blue" tabel-head="Angkatan">2017</td>
+              </tr>
+              <tr class="tr-blue">
+                <td class="td-blue" tabel-head="No">6</td>
+                <td class="td-blue" tabel-head="Nama">Yusuf Umar Al Hakim</td>
+                <td class="td-blue" tabel-head="Program Studi">
+                  Rekayasa Sistem Komputer
+                </td>
+                <td class="td-blue" tabel-head="Praktikum">
+                  Elektronika Dasar
+                </td>
+                <td class="td-blue" tabel-head="Angkatan">2017</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- END OF COMPONENT MAIN -->
+      </section>
+    </main>
+
+    <div class="footer">
+      <footer class="md">
+        <div class="container-footer">
+          <div class="footer-left">
+            <div class="logo-container">
+              <a href="../index.html">
+                <img src="/assets/logo web lab.png" alt="logo lab" />
+              </a>
+            </div>
+            <div class="social-media">
+              <a href="mailto:">
+                <img src="/assets/gmail.png" alt="email" />
+              </a>
+              <a href="#">
+                <img src="/assets/instagram.png" alt="instagram" />
+              </a>
+              <a href="#">
+                <img src="/assets/whatsapp.png" alt="whatsapp" />
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-center">
+            <h4>Informasi</h4>
+            <ul>
+              <li>
+                <a href="pendaftaranPraktikumPage-table.html">Praktikum</a>
+              </li>
+              <li>
+                <a href="downloadModulPage.html">Modul</a>
+              </li>
+              <li>
+                <a href="pendaftaranBebasLabPage-table.html">Bebas Lab</a>
+              </li>
+              <li>
+                <a href="pengumumanPage.html">Pengumuman</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-right">
+            <h4>Alamat</h4>
+            <p>Pontianak, Kalimantan Barat - Indonesia</p>
+            <p>
+              Jl. Prof. Dr. H. Hadar Nawawi, Pontianak Tenggara, Pontianak.
+              78124
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="copyright">
+      <h4>© 2021 Laboratorium Fisika FMIPA UNTAN. All right reserved</h4>
+    </div>
+
+    <script src="/js/scrollHeader.js"></script>
+    <script src="/js/selectPlaceholder.js"></script>
+    <script src="/js/search.js"></script>
+  </body>
+</html>

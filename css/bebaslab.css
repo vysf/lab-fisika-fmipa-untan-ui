@@ -1,0 +1,29 @@
+.allert-yellow {
+  background-color: var(--clr-yellow-400);
+}
+
+#bebaslab-form {
+  /* background-color: violet; */
+  margin: 0 auto;
+
+  width: 51rem; /*816px*/
+}
+
+@media screen and (max-width: 900px) {
+  .allert-yellow,
+  #bebaslab-form {
+    /* width: 500px; */
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .allert-yellow {
+    font-size: 0.875rem; /*14px*/
+  }
+
+  .allert-yellow,
+  #bebaslab-form {
+    width: 95%;
+  }
+}

@@ -1,0 +1,42 @@
+#permohonannilai-form {
+  margin: 0 auto;
+  width: 51rem; /*816px*/
+}
+
+/* .panjang {
+  --left: 21%;
+  left: var(--left);
+} */
+
+.panjang:before,
+.panjang::after {
+  --left: 21%;
+  left: var(--left);
+}
+
+@media screen and (max-width: 900px) {
+  .allert-yellow,
+  #permohonannilai-form {
+    /* width: 500px; */
+    width: 90%;
+  }
+
+  .panjang:before,
+  .panjang::after {
+    --left: 26%;
+    left: var(--left);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .allert-yellow,
+  #permohonannilai-form {
+    width: 95%;
+  }
+
+  .panjang:before,
+  .panjang::after {
+    --left: 49%;
+    left: var(--left);
+  }
+}
