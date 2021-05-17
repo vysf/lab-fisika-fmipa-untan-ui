@@ -42,7 +42,7 @@
   padding: 1.375rem 1.5625rem; /*22px 25px*/
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .btn-download-blue {
@@ -92,5 +92,4 @@
     width: 1.375rem; /*22px*/
     height: auto;
   }
-  /*  */
 }
