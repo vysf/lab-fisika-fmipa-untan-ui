@@ -159,7 +159,7 @@
 
   .btn {
     font-size: 1rem; /* 16px */
-    padding: 0.625rem 2.375rem; /* 10px 38px */
+    /*padding: 0.625rem 2.375rem;*/ /* 10px 38px */
   }
 
   .btn-primary-blue {
