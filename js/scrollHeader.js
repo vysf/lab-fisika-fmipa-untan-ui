@@ -3,7 +3,7 @@ function scrollHeader() {
   const scrollY = window.pageYOffset;
   // console.log(scrollY);
 
-  if (scrollY >= 50) {
+  if (scrollY >= 20) {
     nav.classList.add("scroll-header");
   } else {
     nav.classList.remove("scroll-header");

@@ -5,7 +5,7 @@
   margin-bottom: 3.75rem; /*60px*/
 
   padding: 1rem 0.9375rem; /*16px 15px*/
-  background-color: var(--clr-blue-300);
+  /* background-color: var(--clr-blue-300); */
 
   width: 51rem; /*816px*/
   border-radius: 0.5rem; /*8px*/
@@ -147,9 +147,29 @@ small {
   border: 0.125rem solid var(--clr-red-500); /*2px*/
 }
 
+.peringatan-container {
+  margin: 0 auto;
+  margin-top: 10px; /*60px*/
+
+  /*padding: 1rem 0.9375rem;*/ /*16px 15px*/
+  /* background-color: var(--clr-blue-300); */
+
+  width: 51rem; /*816px*/
+  border-radius: 0.5rem; /*8px*/
+}
+
+.peringatan-text {
+  /* background-color: red; */
+  font-family: "Montserrat", sans-serif;
+  color: var(--clr-black-primary);
+  /* font-weight: 600; */
+  font-size: 0.875rem;
+}
+
 @media screen and (max-width: 900px) {
   .allert-blue,
-  #praktikum-form {
+  #praktikum-form,
+  .peringatan-container {
     /* width: 500px; */
     width: 90%;
   }
@@ -169,8 +189,13 @@ small {
   }
 
   .allert-blue,
-  #praktikum-form {
+  #praktikum-form,
+  .peringatan-container {
     width: 95%;
+  }
+
+  .peringatan-text {
+    font-size: 0.75rem;
   }
 
   .input-field {
