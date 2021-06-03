@@ -180,12 +180,12 @@
     right: 0px;
   } */
 
-  .scroll-button {
+/*   .scroll-button {
     padding: 10px;
-  }
+  } */
 
   .scroll-arrow {
-    border: 6px solid transparent;
+    border: 10px solid transparent;
     border-bottom-color: var(--tooltip-color);
   }
 
